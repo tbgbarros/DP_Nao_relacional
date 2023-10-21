@@ -5,5 +5,6 @@ switched to db FoodManager_DB
 db.createCollection("HelloWorld")
 db.HelloWorld.insertOne({"_id":333222,"cliente":"Thiago Barros", "dt_nasc":"17-12-1991"})
 
-#buscar no banco 
+# buscar no banco 
 db.HelloWorld.find ({},{"_id":0,"COD_VENDA":1,"NOME_CLIENTE":1})
+db.HelloWorld.find ({"NOME_CLIENTE":"Francisco da Cruz"},{"_id":0,"COD_VENDA":1,"NOME_CLIENTE":1})
